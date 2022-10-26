@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: darkslategrey;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    /* background-color: #13293d; */
+    /* color: #fff; */
+  }
+
+.subheading {
+    color:antiquewhite;
+  }
+
+  h1,
+  h2 {
+    color:rgb(173, 29, 230);
+    /* Color for headings */
+    font-family: "Arial","Calibri",sans-serif;
+    /* font for headings */
+  }
+  
+  main {
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-between;
+  }
+
+  main h2 {
+    position:relative;
+  }
+
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .flexbox-grid {
+    border: 5px;
+    border-style: dashed;
+    margin: 10px;
+    /* flex: 1 0 33%; */
+  }
+
+  .text {
+    color:rgb(173, 29, 230);
+    font-family: "Arial","Calibri",sans-serif;
+  }
+
+  .card {
+    position:relative;
+    bottom: 0px;
+    /* Color gradient in background of card */
+    background:linear-gradient(#ad1de6,#778899);
+    border-radius:3%;
+    padding: 10px;
+    margin: 10px;
+    color:antiquewhite;
+    font-family:monospace;
+  }
+
+  footer h2 {
+    color: rgb(173, 29, 230);
+    text-align: center;
+  }
+
+/* Media Queries for Tablet */
+@media screen and (max-width:768px) {
+   .grid {
+       width: 50%;
+    }
+  }
+
+/* Media Queries for Mobile */
+@media screen and (max-width:576px) {
+   .grid {
+       width: 100%;
+    }
+}
