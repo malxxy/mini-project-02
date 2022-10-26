@@ -50,6 +50,7 @@
   }
 
   .flexbox-grid {
+    position:relative;
     border: 5px;
     border-style: dashed;
     margin: 10px;
@@ -62,7 +63,7 @@
   }
 
   .card {
-    position:relative;
+    position:absolute;
     bottom: 0px;
     /* Color gradient in background of card */
     background:linear-gradient(#ad1de6,#778899);
