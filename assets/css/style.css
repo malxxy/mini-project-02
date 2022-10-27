@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    background-color: darkslategrey;
+    background-color: #2E2E2F;
   }
 
   header {
@@ -43,17 +43,19 @@
 
   main h2 {
     position:relative;
-    margin-top: -30px;
+    margin: -20px auto 0 auto;
     border: 3px solid white;
     border-radius:5%;
-    background-color: darkslategray;
+    background-color: #2E2E2F;
     padding: 2px 5px;
+    width:fit-content;
   }
 
   .grid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
   }
 
   .flexbox-grid {
@@ -65,12 +67,11 @@
 
   .text {
     position:relative;
-    top:5px;
-    left: 10px;
     color:rgb(173, 29, 230);
     font-family: "Arial","Calibri",sans-serif;
     text-align: left;
-    min-height: 100px;
+    min-height: 150px;
+    margin: 10px;
   }
 
   .card {
@@ -89,19 +90,28 @@
 
   footer h2 {
     color: rgb(173, 29, 230);
-    text-align: center;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
   }
 
 /* Media Queries for Tablet */
 @media screen and (max-width:768px) {
    .grid {
-       width: 50%;
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2,1fr);
+      grid-row-gap: 30px;
     }
   }
 
 /* Media Queries for Mobile */
 @media screen and (max-width:576px) {
    .grid {
-       width: 100%;
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(1,1fr);
+      grid-row-gap: 30px;
     }
 }
