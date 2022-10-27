@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    text-align:center;
   }
 
   body {
@@ -54,12 +55,14 @@
     border: 5px;
     border-style: dashed;
     margin: 10px;
-    /* flex: 1 0 33%; */
   }
 
   .text {
     color:rgb(173, 29, 230);
     font-family: "Arial","Calibri",sans-serif;
+    text-align: left;
+    min-height: 100px;
+    margin: 10px;
   }
 
   .card {
@@ -72,6 +75,7 @@
     margin: 10px;
     color:antiquewhite;
     font-family:monospace;
+    width: 90%;
   }
 
   footer h2 {
