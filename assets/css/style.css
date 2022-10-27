@@ -90,6 +90,10 @@
     width: 90%;
   }
 
+  .card:hover {
+    user-select: all;
+  }
+
   footer h2 {
     color: rgb(173, 29, 230);
     bottom: 0px;
