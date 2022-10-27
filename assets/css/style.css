@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    text-align:center;
   }
 
   body {
@@ -22,6 +21,7 @@
 .subheading {
     color:white;
     font-family: "Arial","Calibri",sans-serif;
+    text-align: center;
   }
 
   h1,
@@ -30,6 +30,7 @@
     /* Color for headings */
     font-family: "Arial","Calibri",sans-serif;
     /* font for headings */
+    text-align: center;
   }
   
   main {
@@ -63,6 +64,7 @@
     border: 5px white;
     border-style: dashed;
     margin: 10px;
+    height: 100%;
   }
 
   .text {
