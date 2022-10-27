@@ -43,6 +43,11 @@
 
   main h2 {
     position:relative;
+    margin-top: -30px;
+    border: 3px solid white;
+    border-radius:5%;
+    background-color: darkslategray;
+    padding: 2px 5px;
   }
 
   .grid {
@@ -53,22 +58,25 @@
 
   .flexbox-grid {
     position:relative;
-    border: 5px;
+    border: 5px white;
     border-style: dashed;
     margin: 10px;
   }
 
   .text {
+    position:relative;
+    top:5px;
+    left: 10px;
     color:rgb(173, 29, 230);
     font-family: "Arial","Calibri",sans-serif;
     text-align: left;
     min-height: 100px;
-    margin: 10px;
   }
 
   .card {
     position:absolute;
     bottom: 0px;
+    align-items: center;
     /* Color gradient in background of card */
     background:linear-gradient(#ad1de6,#778899);
     border-radius:3%;
